@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FONT</title>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/funcs.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <p class="textcontainer"></p>
+
+        <div class="sliders">
+            <div class="slider">
+                <label class="slider-label" for="bold-pos-slider">Bold position: </label>
+                <input type="range" id="bold-pos-slider" name="bold-pos-slider" min="0" max="100" step="1" value="50" />
+                <span class="slider-label" id="bold-pos-text">placeholder</span>
+            </div>
+            <div class="slider">
+                <label class="slider-label" for="bold-width-slider">Bold width: </label>
+                <input type="range" id="bold-width-slider" name="bold-width-slider" min="1" max="400" step="1"
+                    value="30" />
+                <span class="slider-label" id="bold-width-text">placeholder</span>
+
+            </div>
+
+            <div class="slider">
+                <label class="slider-label" for="min-weight-slider">Min weight: </label>
+                <input type="range" id="min-weight-slider" name="min-weight-slider" min="10" max="100" step="1"
+                    value="10" />
+                <span class="slider-label" id="min-weight-text">placeholder</span>
+
+            </div>
+            <div class="slider">
+                <label class="slider-label" for="max-weight-slider">Max weight: </label>
+                <input type="range" id="max-weight-slider" name="max-weight-slider" min="10" max="100" step="1"
+                    value="100" />
+                <span class="slider-label" id="max-weight-text">placeholder</span>
+            </div>
+
+            <label class="switch">
+                <input id="animate-toggle" type="checkbox">
+                <span class="switch-slider"></span>
+            </label>
+        </div>
+    </div>
+</body>
+
+</html>

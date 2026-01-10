@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'KarioDuplexVar';
+    src: URL('https://events.ccc.de/congress/2025/infos/styleguide/latest/fonts/KarioVar-Roman.ttf') format('truetype');
+    src: URL('https://events.ccc.de/congress/2025/infos/styleguide/latest/fonts/Kario39C3VarWEB-Roman.woff') format('woff');
+    src: URL('https://events.ccc.de/congress/2025/infos/styleguide/latest/fonts/Kario39C3VarWEB-Roman.woff2') format('woff2');
+}
+
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.textcontainer {
+    font-family: "KarioDuplexVar", serif;
+    font-size: 5rem;
+    margin: 1rem;
+    font-weight: 10;
+    font-kerning: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.sliders {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.slider {
+    margin: 1rem;
+    display: flex;
+    flex-flow: row;
+}
+
+.slider>label {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.slider>input {
+    accent-color: #2196F3;
+}
+
+.slider>span {
+    min-width: 4rem;
+    margin-left: 1rem;
+    text-align: right;
+}
+
+.slider-label {
+    font-family: "KarioDuplexVar", serif;
+    font-size: 1.5rem;
+    font-weight: 35;
+    font-kerning: none;
+}
+
+
+.switch {
+    margin: 1rem;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 1rem auto;
+
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .1s;
+    transition: .1s;
+    border-radius: 34px;
+}
+
+.switch-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .1s;
+    transition: .1s;
+    border-radius: 50%;
+}
+
+input:checked+.switch-slider {
+    background-color: #2196F3;
+}
+
+input:checked+.switch-slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
